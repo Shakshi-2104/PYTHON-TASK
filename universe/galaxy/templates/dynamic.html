@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>DYNAMIC</h1>
+<p>WELCOME TO DYNAMIC PAGE</p>
+{{data}}
+{%for n in clist%}
+<div>
+<input type='radio' name='clist' value='{{n}}' id='radio_{{forloop.}}'>
+</div>
+<label for='radio_{{forloop.}}'>{{n}}</label>
+{%endfor%}
+</body>
+</html>
